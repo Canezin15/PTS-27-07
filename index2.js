@@ -22,13 +22,13 @@ media(){
     if(media_F > 6){
         return 0 + " pontos"
     }else{
-        return 6 - media_F.toFixed() + " pontos"
+        return "falta " + (6 - media_F).toFixed(2) + " pontos"
     }
 
 }
 
 }
 
-const alunos = new Alunos("IF", "Canezin", 5, 5, 5)
+const alunos = new Alunos("IF", "Canezin", 9, 6, 8)
 console.log(alunos.media())
 
